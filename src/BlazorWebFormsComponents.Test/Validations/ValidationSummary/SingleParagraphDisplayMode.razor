@@ -25,10 +25,10 @@
 	bool _invalidSubmit = false;
 	ForwardRef<InputBase<string>> Name = new ForwardRef<InputBase<string>>();
 
-	void FirstTest(IRazorTestContext context)
+	void FirstTest(Fixture fixture)
 	{
 
-		var cut = context.GetComponentUnderTest();
+		var cut = fixture.GetComponentUnderTest();
 
 		cut.Find("input").Change("");
 
